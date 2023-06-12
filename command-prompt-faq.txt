@@ -1,0 +1,152 @@
+Command Prompt FAQ
+
+---
+
+1. What is the command prompt?
+
+Command prompt is a program included with all versions of Windows which allows 
+you to execute scripts (small programs) using a purely text-based interface. 
+Contrast this with the graphical user interface (buttons, mounter interactions) 
+found in most programs you've previously used.
+
+The command prompt reacts only to text based commands, and to some degree to 
+mouse clicks. If you want something to work, you need to type it in and hit 
+enter.
+
+---
+
+2. How do I access the command prompt?
+
+You can access the command prompt (another term for command line) by navigating 
+the Windows Start menu. It's usually under System or System Tools. You could 
+also use the Run or Search menus to look for cmd.exe, which is the name of the 
+actual command prompt program.
+
+Access the Run menu with the Windows Key and the r key, then type cmd.exe and 
+hit enter to bring up the command prompt.
+
+If you want a version of the command prompt with a few more features, then you 
+can use Powershell instead. It's found in it's own menu in the Windows 10 Start 
+Menu. It is better in every way, and I recommend you use it.
+
+---
+
+3. How do I use the command prompt once I have it open?
+
+As I said above, you type things into it (commands) and hit enter to execute 
+those things.
+
+Two useful commands that you should know are cd (change directory), and dir 
+(view directory contents). If you're not familiar with the term, directory 
+means essentially the same thing as folder in the context of Windows.
+
+Type cd followed by the name of the folder you want to navigate to, then hit 
+enter. For example:
+
+cd Users
+
+If you want to view the contents of a folder, type dir followed by the 
+name of the folder you want to inspect and then hit enter. For example:
+
+dir Users
+
+If you don't want to type the full name, or are unsure of what constitutes a 
+legal folder name, then type the command, and then hit tab to cycle through all 
+legal inputs for that command in the current working folder.
+
+Tab will autofill stuff like the folder names, required prefixes, and the 
+backslash that indicates the end of a folder. There is no reason to ever type 
+the full name of a file; instead type a enough of the letters to distinguish it 
+from all the other files in that folder with similar starting letters for it's 
+name and then hit tab to auto-complete.
+
+You can navigate through more than one nested folder at a time, by separating 
+each folder in the path you want to navigate through with a backslash. For 
+example:
+
+cd Users\MysticLord
+
+dir Users\MysticLord
+
+Usually, cd and dir operate assuming that you're navigating from the folder you 
+are currently in, which is found just before the part of the command prompt in 
+which your typing appears. This is the full path to the current folder, 
+starting from the name of the hard drive where you started. For example:
+
+C:\Users\MysticLord\Mods
+
+This is called the absolute path. At any time and in any location, you can 
+navigate to an absolute path by typing it in full, starting with the name of 
+the hard drive where it is found and going sequentially from there through each 
+folder.
+
+cd D:\Backups\Mods\SagaFrontier\
+
+dir E:\
+
+The command prompt always starts in the named drive where Windows operating 
+system is installed, in this case:
+
+C:\
+
+If you want to navigate up a folder, enter .. after the command. For example:
+
+cd ..
+
+You can navigate up multiple folders by separating each .. with a backslash. 
+For example:
+
+cd ../..
+
+You can navigate both up and down multiple folders by combining .. and folder 
+names. For example:
+
+cd ../../OgreBattleSNES/editors/encounters
+
+You can send the text output of a command (what it prints in the command 
+prompt) to a text file with the redirection operator, which is the > character. 
+For example:
+
+dir C:\Users\MysticLord\Mods\OgreBattleSNES > ob_files_listing.txt
+
+You can switch between any commands you've previously entered with the up and 
+down arrows.
+
+It is impossible to break anything with cd and dir, feel free to explore.
+
+---
+
+4. Why do I need to learn the command prompt?
+
+You need to learn the basics of the command prompt so you can use my 
+spreadsheet editors to edit data in video games. It sucks, but it's better than 
+doing all those edits manually with a hex editor.
+
+My spreadsheet editors use Python scripts to apply the changes you've made. 
+Python is a programming language. To use it you need to install it.
+
+---
+
+5. How do I install Python?
+
+You need to install a version of Python 3 if it's not already installed.
+
+Before you do, check if it's installed by opening a command prompt and typing:
+
+python --version
+
+Simple search for the text "Python 3 installation" minus the double quotes, and 
+the first link should be the python.org installation guide. Follow the install 
+guide for your operating system. If you're unsure of what operating system you 
+use: if it's not an Apple or Mac device, it's probably Windows.
+
+If you have multiple version of python installed, you may need to specifiy 
+Python version 3 in later commands. Do so by substituting "python3" for the 
+text "python" if you need to, though in some cases the default will be Python 
+version 3 so it may not matter.
+
+If you can't get Python to work, read this and try to correct the Path variable.
+
+https://www.educative.io/edpresso/how-to-add-python-to-path-variable-in-windows
+
+---
