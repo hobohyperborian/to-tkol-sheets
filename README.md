@@ -5,3 +5,11 @@ Click on "Code" in the section above, then click "Download ZIP" to get the sheet
 
 Our Ogre franchise modding discord is here:
 https://discord.gg/YRWaZsQ89p
+
+TODO list
+
+* Refamiliarize myself with all the data when I have sufficient free time to complete the project in one go.
+* Identify easily found unknown data.
+* Develop a testing suite to flesh out those data.
+* Add these info the spreadsheets.
+* Make a mod.
